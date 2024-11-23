@@ -1,3 +1,14 @@
+[project]
+name            = "RocketSim"
+version         = "2.1.1.post1"
+description     = "This is Rocket League!"
+dependencies    = ["numpy"]
+requires-python = ">= 3.9"
+
 [build-system]
-requires = ["oldest-supported-numpy", "setuptools", "wheel"]
-build-backend = "setuptools.build_meta:__legacy__"
+requires      = ["numpy>=2.0,<3", "tomli; python_version<'3.11'"]
+build-backend = "cmeel.build"
+backend-path  = "."
+
+[tool.cmeel]
+run-tests = false
