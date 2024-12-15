@@ -4,7 +4,7 @@
 
 #include "../DataStream/DataStreamIn.h"
 
-#define COLLISION_MESH_BASE_PATH "./collision_meshes/"
+#define COLLISION_MESH_BASE_PATH "/kaggle/input/clsfile/collision_meshes"
 #define COLLISION_MESH_FILE_EXTENSION ".cmf"
 
 class btTriangleMesh;
